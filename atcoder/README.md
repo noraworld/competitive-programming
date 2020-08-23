@@ -11,3 +11,24 @@ https://atcoder.jp/home
   <dt><a>AGC</a></dt>
   <dd>AtCoder Grand Contest. For advanced programmers.</dd>
 </dl>
+
+## Requirements
+- [AtCoder Tools](https://github.com/kyuridenamida/atcoder-tools)
+
+```bash
+# Download input and output example files
+$ atcoder-tools gen <PROBLEM_ID>
+
+# Run test
+$ atcoder-tools test
+```
+
+`~/.atcodertools.toml`
+```
+[codestyle]
+workspace_dir='/path/to/competitive_programming/atcoder/'
+lang='python'
+
+[etc]
+download_without_login=true
+```
