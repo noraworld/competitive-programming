@@ -1,1 +1,1 @@
-https://atcoder.jp/contests/abs/tasks
+https://atcoder.jp/contests/abs/score
