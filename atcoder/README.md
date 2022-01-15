@@ -21,17 +21,16 @@ https://atcoder.jp/home
 [codestyle]
 workspace_dir='/path/to/competitive_programming/atcoder/'
 lang='python'
-
-[etc]
-download_without_login=true
 ```
 
 ```shell
 # Download input and output example files
-$ atcoder-tools gen --without-login <PROBLEM_ID>
+$ atcoder-tools gen <PROBLEM_ID>
 
 # Run test
 $ atcoder-tools test
 ```
 
 `<PROBLEM_ID>` is in URL. For example, if you want to solve [`atcoder.jp/contests/abc235`](https://atcoder.jp/contests/abc235), it should be `abc235`.
+
+When downloading files with `gen` subcommand, a username and a password is required for a contest being held right now, otherwise you can use `--without-login` option to skip a login.
