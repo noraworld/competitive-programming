@@ -15,6 +15,17 @@ https://atcoder.jp/home
 ## Requirements
 - [AtCoder Tools](https://github.com/kyuridenamida/atcoder-tools)
 
+```toml
+# ~/.atcodertools.toml
+
+[codestyle]
+workspace_dir='/path/to/competitive_programming/atcoder/'
+lang='python'
+
+[etc]
+download_without_login=true
+```
+
 ```shell
 # Download input and output example files
 $ atcoder-tools gen --without-login <PROBLEM_ID>
@@ -24,14 +35,3 @@ $ atcoder-tools test
 ```
 
 `<PROBLEM_ID>` is in URL. For example, if you want to solve [`atcoder.jp/contests/abc235`](https://atcoder.jp/contests/abc235), it should be `abc235`.
-
-```toml
-# ~/.atcodertools.toml`
-
-[codestyle]
-workspace_dir='/path/to/competitive_programming/atcoder/'
-lang='python'
-
-[etc]
-download_without_login=true
-```
