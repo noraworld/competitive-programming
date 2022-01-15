@@ -23,7 +23,7 @@ $ atcoder-tools gen --without-login <PROBLEM_ID>
 $ atcoder-tools test
 ```
 
-`<PROBLEM_ID>` is in URL. For example, if you want to solve `[atcoder.jp/contests/abc235](https://atcoder.jp/contests/abc235)`, it should be `abc235`.
+`<PROBLEM_ID>` is in URL. For example, if you want to solve [`atcoder.jp/contests/abc235`](https://atcoder.jp/contests/abc235), it should be `abc235`.
 
 ```toml
 # ~/.atcodertools.toml`
