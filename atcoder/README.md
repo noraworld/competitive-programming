@@ -15,16 +15,19 @@ https://atcoder.jp/home
 ## Requirements
 - [AtCoder Tools](https://github.com/kyuridenamida/atcoder-tools)
 
-```bash
+```shell
 # Download input and output example files
-$ atcoder-tools gen <PROBLEM_ID>
+$ atcoder-tools gen --without-login <PROBLEM_ID>
 
 # Run test
 $ atcoder-tools test
 ```
 
-`~/.atcodertools.toml`
-```
+`<PROBLEM_ID>` is in URL. For example, if you want to solve `[atcoder.jp/contests/abc235](https://atcoder.jp/contests/abc235)`, it should be `abc235`.
+
+```toml
+# ~/.atcodertools.toml`
+
 [codestyle]
 workspace_dir='/path/to/competitive_programming/atcoder/'
 lang='python'
