@@ -5,23 +5,17 @@ def main
   num = gets.to_i
   arr = gets.split(' ').map(&:to_i)
 
-  done = []
+  delete_element = arr.last
   arr.each_with_index do |a, index|
-    next if done.include?(a)
-    done << a
+    break if arr[index + 1].nil?
 
-    result = arr.filter { |x| x != a }
-
-    if result.empty?
-      puts ''
-      return
-    end
-
-    if result[index].nil? || result[index] < a
-      puts result.join(' ')
-      return
+    if arr[index] > arr[index + 1]
+      delete_element = arr[index]
+      break
     end
   end
+
+  puts arr.filter { |x| x != delete_element }.join(' ')
 end
 
 main
